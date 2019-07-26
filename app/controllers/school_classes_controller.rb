@@ -23,10 +23,10 @@ class SchoolClassesController < ApplicationController
     redirect_to school_class_path(@school_class)
   end
 
-  private 
+  private
   def school_class_params(*args)
     params.require(:school_class).permit(*args)
   end
 end
-    
+
     
